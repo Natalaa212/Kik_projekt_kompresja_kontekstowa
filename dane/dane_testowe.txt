@@ -1,0 +1,28 @@
+=== SEKCJA 1: TEKST NATURALNY POWTARZALNY ===
+ala ma kota, a kot ma ale. ala lubi koty, koty lubią ale.
+w murowanej piwnicy tańcowali zbójnicy, tańcowali zbójnicy w murowanej piwnicy.
+kotek mamrotek, piesek leszek, kotek mamrotek, piesek leszek.
+lokomotywa stoi na stacji, ciężka, ogromna i wylewa z siebie pot.
+lokomotywa stoi na stacji, ciężka, ogromna i wylewa z siebie pot.
+
+=== SEKCJA 2: STRUKTURA KODU (WYSOKA PREDEKCYJNOŚĆ 1-GRAM) ===
+<div>
+    <ul>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+    </ul>
+</div>
+
+=== SEKCJA 3: SEKWENCJE ZNAKÓW I POWTÓRZENIA ===
+ABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABC
+XYZXYZXYZXYZXYZXYZXYZXYZXYZXYZXYZXYZXYZXYZXYZXYZ
+12345123451234512345123451234512345123451234512345
+-----+++++-----+++++-----+++++-----+++++-----+++++
