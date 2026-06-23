@@ -27,13 +27,15 @@ def build_huffman_tree(frequencies):
         return heap[0]
 
     while len(heap) > 1:
+        # Pobranie dwóch węzłów o najmniejszej wadze
         left = heapq.heappop(heap)
         right = heapq.heappop(heap)
+        # Stworzenie węzła nadrzędnego
         merged = Node(None, left.freq + right.freq)
         merged.left = left
         merged.right = right
+        # Zwrócenie połączonego węzła do kolejki
         heapq.heappush(heap, merged)
-
     return heap[0] if heap else None
 
 

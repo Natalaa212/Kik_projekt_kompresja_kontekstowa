@@ -59,7 +59,7 @@ def compress_ppm(data, max_order=4):
     if not data:
         return "", {}, 0
 
-    # 1. budowa zestawu modeli dla rzędu: 0, 1, 2, 3 i 4
+    # budowa zestawu modeli dla rzędu: 0, 1, 2, 3 i 4
     freqs = {order: collections.defaultdict(lambda: collections.defaultdict(int)) for order in range(max_order + 1)}
 
     # Rząd 0: Kontekst zerowy (ratunkowy)
@@ -73,7 +73,7 @@ def compress_ppm(data, max_order=4):
             context = data[i - order:i]
             freqs[order][context][char] += 1
 
-    # Dodanie mechanizmu ESCAPE
+    # Mechanizm escape
     for order in range(1, max_order + 1):
         for context in freqs[order]:
             freqs[order][context][ESC] = 1

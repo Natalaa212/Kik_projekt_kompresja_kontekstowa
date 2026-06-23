@@ -53,7 +53,7 @@ def compress_2gram(data):
 
     # context_freqs[kontekst][znak] = liczba wystapien
     context_freqs = collections.defaultdict(lambda: collections.defaultdict(int))
-    context = ""  # Zaczynamy od pustego kontekstu
+    context = ""
 
     # Zliczanie częstotliwości w kontekstach 2-znakowych
     for char in data:
@@ -71,7 +71,7 @@ def compress_2gram(data):
     compressed_bits = []
     context = ""
 
-    # Właściwa kompresja
+    # kompresja
     for char in data:
         code = context_codes[context][char]
         compressed_bits.append(code)
